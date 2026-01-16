@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+/* Background de Vídeo */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Barra de Navegação */
+nav {
+    background-color: #141414;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 15px 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+    background-color: #333333;
+    border-bottom: 3px solid #b3019b;
+    color: #cc00ff;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px;
+}
+
+section {
+    min-height: 100vh;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-behavior: smooth;
+}
+
+section h1, section h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+section p {
+    color: #ffffff;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* Grid de Projetos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background-color: rgba(20, 20, 20, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #b3019b;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(179, 1, 155, 0.4);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    background-color: #333333;
+}
+
+.project-card h3 {
+    color: #cc00ff;
+    padding: 20px 20px 10px 20px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.project-card p {
+    color: #ffffff;
+    padding: 0 20px 20px 20px;
+    font-size: 0.95em;
+    text-align: center;
+}
