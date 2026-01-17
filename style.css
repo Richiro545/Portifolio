@@ -77,12 +77,14 @@ section h1, section h2 {
     margin-bottom: 20px;
     font-size: 2.5em;
     text-align: center;
+    -webkit-text-stroke: 2px #830071;
 }
 
 section p {
     color: #ffffff;
-    font-size: 1.1em;
+    font-size: 1.2em;
     text-align: center;
+    -webkit-text-stroke: 0.7px #830071;
 }
 
 /* Grid de Projetos */
@@ -117,6 +119,7 @@ section p {
     padding: 20px 20px 10px 20px;
     font-size: 1.3em;
     text-align: center;
+    -webkit-text-stroke: 0.8px #b3019b;
 }
 
 .project-card p {
@@ -124,4 +127,5 @@ section p {
     padding: 0 20px 20px 20px;
     font-size: 0.95em;
     text-align: center;
+    -webkit-text-stroke: 0.5px #b3019b;
 }
